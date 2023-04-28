@@ -4075,7 +4075,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0854f74184763f4f8a5654bf2b7b893, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 5.61
+      value: 5.736
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e0854f74184763f4f8a5654bf2b7b893, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4118,7 +4118,10 @@ PrefabInstance:
       value: HospitalBed
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0854f74184763f4f8a5654bf2b7b893, type: 3}
+      insertIndex: 0
+      addedObject: {fileID: 539501359}
   m_SourcePrefab: {fileID: 100100000, guid: e0854f74184763f4f8a5654bf2b7b893, type: 3}
 --- !u!1001 &431860191
 PrefabInstance:
@@ -4907,6 +4910,60 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5564286558465770506, guid: ebc9baf2b09f89b449cf0fdab26f5072, type: 3}
   m_PrefabInstance: {fileID: 740244960}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &539501358
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 539501359}
+  - component: {fileID: 539501362}
+  - component: {fileID: 539501360}
+  m_Layer: 0
+  m_Name: colldierCube
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &539501359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539501358}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -11.9, z: 0}
+  m_LocalScale: {x: 133.10535, y: 79.79799, z: 364.7353}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1110696296}
+  m_RootOrder: -1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &539501360
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539501358}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.2438926, y: 1, z: 0.96056455}
+  m_Center: {x: 0.121944815, y: 0, z: 0.019718518}
+--- !u!33 &539501362
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539501358}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!4 &544682078 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5564286558465770506, guid: ebc9baf2b09f89b449cf0fdab26f5072, type: 3}
@@ -11238,6 +11295,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 5365967887359620267, guid: 73418daa259004c4fa7864f32c6e1399, type: 3}
   m_PrefabInstance: {fileID: 1099570472}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1110696296 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: e0854f74184763f4f8a5654bf2b7b893, type: 3}
+  m_PrefabInstance: {fileID: 424493500}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1114348168
 PrefabInstance:
@@ -19710,7 +19772,7 @@ MonoBehaviour:
   crosshair: 1
   crosshairImage: {fileID: 21300000, guid: be4ce60e2c9768c44b9b10b9c5258045, type: 3}
   crosshairColor: {r: 1, g: 1, b: 1, a: 1}
-  enableZoom: 1
+  enableZoom: 0
   holdToZoom: 1
   zoomKey: 324
   zoomFOV: 30
@@ -19718,7 +19780,7 @@ MonoBehaviour:
   playerCanMove: 1
   walkSpeed: 5
   maxVelocityChange: 10
-  enableSprint: 1
+  enableSprint: 0
   unlimitedSprint: 1
   sprintKey: 304
   sprintSpeed: 7
